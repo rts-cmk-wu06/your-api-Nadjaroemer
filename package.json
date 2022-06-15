@@ -1,0 +1,30 @@
+{
+  "name": "your-api-nadjaroemer",
+  "version": "1.0.0",
+  "description": "I denne opgave skal du lave dit eget API med Express og MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rts-cmk-wu06/your-api-Nadjaroemer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rts-cmk-wu06/your-api-Nadjaroemer/issues"
+  },
+  "homepage": "https://github.com/rts-cmk-wu06/your-api-Nadjaroemer#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
