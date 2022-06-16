@@ -41,3 +41,27 @@ export async function createProduct(request, response) {
     }
   }
 }
+
+export async function deleteProduct(request, response) {
+  try {
+    const product = await Product.findByIdAndRemove(request.params.query);
+
+    if (!product) {
+      response.status(404).end();
+      return;
+    }
+
+    response.status(204).end();
+  } catch (error) {
+    const product = await Product.findOneAndRemove({
+      name: request.params.query,
+    });
+
+    if (!product) {
+      response.status(404).end();
+      return;
+    }
+
+    response.status(204).end();
+  }
+}
