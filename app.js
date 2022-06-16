@@ -1,14 +1,11 @@
 import express from "express";
-const app = express();
-const Router = express.Router();
+import Router from "./router.js";
 
-Router.get("/", function (request, response) {
-  respond.send("Hello, World");
-});
+const app = express();
 
 app.use(Router);
 
-app.listen(1337, function (error) {
+app.listen(1424, function (error) {
   if (error) {
     console.log("Error", error);
     process.exit(1);

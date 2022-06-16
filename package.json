@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/rts-cmk-wu06/your-api-Nadjaroemer.git"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
