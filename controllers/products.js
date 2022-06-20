@@ -9,7 +9,6 @@ export async function getSingleProduct(request, response) {
       response.end();
       return;
     }
-
     response.json(product);
   } catch (error) {
     const product = await Product.findOne({ name: request.params.query });
@@ -19,7 +18,6 @@ export async function getSingleProduct(request, response) {
       response.end();
       return;
     }
-
     response.json(product);
   }
 }
@@ -50,18 +48,15 @@ export async function deleteProduct(request, response) {
       response.status(404).end();
       return;
     }
-
     response.status(204).end();
   } catch (error) {
     const product = await Product.findOneAndRemove({
       name: request.params.query,
     });
-
     if (!product) {
       response.status(404).end();
       return;
     }
-
     response.status(204).end();
   }
 }
