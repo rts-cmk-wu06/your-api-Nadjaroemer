@@ -45,6 +45,7 @@ const userSchema = mongoose.Schema({
     required: [true, "You must provide a role"],
     default: "customer",
   },
+  orders: [{ type: mongoose.Types.ObjectId, ref: "Order" }],
 });
 
 const User = mongoose.model("User", userSchema);
