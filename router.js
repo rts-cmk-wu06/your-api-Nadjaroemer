@@ -12,6 +12,7 @@ import {
   getSingleProduct,
   deleteProduct,
 } from "./controllers/products.js";
+import { createOrder } from "./controllers/orders.js";
 
 const Router = express.Router();
 
