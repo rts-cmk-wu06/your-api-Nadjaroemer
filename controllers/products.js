@@ -26,6 +26,7 @@ export async function createProduct(request, response) {
   const newProduct = new Product();
   newProduct.name = request.body.name;
   newProduct.price = request.body.price;
+  newProduct.quantity = request.body.quantity;
   newProduct.description = request.body.description;
 
   try {
